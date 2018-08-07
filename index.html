@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h4 class="logo">
+                sit<span class="mainColor">on</span>chair
+            </h4>
+            <nav>
+                <ul class="mainMenu">
+                    <li id="dropdownMenu" class="mainMenu_item"><a href="#">O firmie</a>
+                        <ul class="subMenu">
+                            <li class="subMenu_item">
+                                <a href="#">Aktualności</a>
+                                <div class="navigationPointer"></div>
+                            </li>
+                            <li class="subMenu_item"><a href="#">Nasz team</a></li>
+                            <li class="subMenu_item"><a href="#">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu_item"><a href="#">Galeria</a></li>
+                    <li class="mainMenu_item"><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="button_left mainColor"><</div>
+        <div class="slideContainer">
+            <div class="slide">
+                <div class="slide_left">
+                    <!-- <img src="images/black_chair.png" alt="black chair" width="470" height="337"> -->
+                </div>
+                <div class="slide_right">
+                    <h1>sit <span class="mainColor">on</span> our <span class="mainColor">chair</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facere laudantium nulla obcaecati possimus quas repellat sint totam vero, voluptatem. Deserunt ducimus excepturi id quis temporibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <div class="slide_right--button mainBackgroundColor"><a href="#">zobacz więcej</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="button_right mainColor">></div>
+    </section>
+    <section class="articles container">
+        <div class="flexWrapper">
+            <div id="chair1" class="articles_item">
+                <div class="articles_header">
+                    <h4>Chair CLAIRE</h4>
+                    <hr class="mainBackgroundColor">
+                </div>
+            </div>
+            <div id="chair2" class="articles_item">
+                <div class="articles_header">
+                    <h4>Chair MARGARITA</h4>
+                    <hr class="mainBackgroundColor">
+                </div>
+            </div>
+            <div class="articles_item">
+                 <div class="articles_header--last">
+                     <h4>Finds all inputs</h4>
+                     <hr class="mainBackgroundColor">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at autem cum dignissimos eveniet harum, ipsum nam natus non optio placeat quia quisquam recusandae ut vitae?</p>
+                     <br>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="offer container">
+        <h3>cennik</h3>
+        <hr class="mainBackgroundColor alignedLeft">
+        <div class="flexWrapper">
+            <div class="offer_item">
+                <div class="circle">
+                    <div class="dot"></div>
+                </div>
+                <h2 class="mainColor">basic plan</h2>
+                <strong class="price">
+                    <span class="upperLine">85<sup>99</sup></span>
+                    <br>
+                    <span class="lowerLine">PLN/MSC</span>
+                </strong>
+                <ul>
+                    <li><span>Zakup towaru + dowóz</span></li>
+                    <li><span>Serwis</span></li>
+                </ul>
+                <div class="button mainBackgroundColor"><a href="#">dołącz</a></div>
+            </div>
+            <div id="offer_active" class="offer_item">
+                <div id="circle_active" class="circle">
+                    <div id="dot_active" class="dot"></div>
+                </div>
+                <h2 class="header_active">standard plan</h2>
+                <strong id="price_active" class="price">
+                    <span class="upperLine mainColor">95<sup>99</sup></span>
+                    <br>
+                    <span class="lowerLine mainColor">PLN/MSC</span>
+                </strong>
+                <ul id="list_active">
+                    <li><span>Zakup towaru + dowóz</span></li>
+                    <li><span>Serwis</span></li>
+                    <li><span>Gwarancja 5 lat</span></li>
+                </ul>
+                <div id="button_active" class="button"><a href="#" class="mainColor">dołącz</a></div>
+            </div>
+            <div class="offer_item">
+                <div class="circle">
+                    <div class="dot"></div>
+                </div>
+                <h2 class="mainColor">advance plan</h2>
+                <strong class="price">
+                    <span class="upperLine">211<sup>00</sup></span>
+                    <br>
+                    <span class="lowerLine">PLN/MSC</span>
+                </strong>
+                <ul>
+                    <li><span>Zakup towaru + dowóz</span></li>
+                    <li><span>Serwis</span></li>
+                    <li><span>Gwarancja 6 lat</span></li>
+                    <li><span>Porady projektanta</span></li>
+                </ul>
+                <div class="button mainBackgroundColor"><a href="#">dołącz</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="contactForm container">
+        <h3>kontakt</h3>
+        <hr class="mainBackgroundColor alignedLeft">
+        <form>
+            <fieldset id="form_left">
+                <input class="margin_styles mail_text" type="text" name="name" placeholder="Imię">
+                <input class="margin_styles mail_text" type="email" name="email" placeholder="email">
+                <textarea class="form_mail mail_text" class="margin_styles" name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+            </fieldset>
+            <fieldset id="form_right">
+                <div class="form_row">
+                    <div class="form_decoration"></div>
+                </div>
+                <div class="form_row">
+                    <input class="checkbox_field" type="checkbox">
+                    <label class="checkbox_text">
+                        Zgadzam się na przetwarzanie danych osobowych
+                    </label>
+                </div>
+                <div class="form_row">
+                    <input class="button_submit mainBackgroundColor" type="submit" value="Wyślij">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer class="container flexed">
+        <section class="footer_left">
+            <p>Copyright 2014 | All Rights Reserved - Sit On Chair</p>
+        </section>
+        <section class="footer_middle flexed">
+            <a href="https://www.flickr.com"><div class="icon_footer" id="icon_flickr"></div></a>
+            <a href="https://vimeo.com"><div class="icon_footer" id="icon_vimeo"></div></a>
+            <a href="https://pl.pinterest.com"><div class="icon_footer" id="icon_pinterest"></div></a>
+            <a href="https://twitter.com"><div class="icon_footer" id="icon_twitter"></div></a>
+        </section>
+        <section class="footer_right logo flexed">
+            <span>sit on chair</span>
+        </section>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
