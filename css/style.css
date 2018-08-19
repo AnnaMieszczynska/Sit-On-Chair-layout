@@ -110,7 +110,7 @@ li.mainMenu_item {
     margin: 8px;
     left: 993px;
     right: 993px;
-    visibility: hidden;
+    /*visibility: hidden; */
 }
 
 .subMenu_item {
@@ -146,9 +146,9 @@ li.mainMenu_item {
     z-index: 2;
 }
 
-#dropdownMenu:hover > .subMenu {
+/*#dropdownMenu:hover > .subMenu {
     visibility: visible;
-}
+} */
 
 
 /* ----- section.slider styles ----- */
@@ -591,9 +591,15 @@ textarea.form_mail {
     width: 55px;
     height: 55px;
     border-radius: 0;
-    background-image: url("../images/form_ok.jpg");
     border: 1px solid #24baa0;
     margin: 0 20px 0 40px;
+}
+
+.checkbox_field:checked {
+    background-image: url("../images/form_ok.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .checkbox_text {

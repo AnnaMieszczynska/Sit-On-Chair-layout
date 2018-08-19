@@ -1,3 +1,23 @@
+//------------Drop-down SubMenu-----------
+
+let dropdownMenu = document.getElementById("dropdownMenu");
+let subMenu = document.querySelector(".subMenu");
+let defaultVisibility = subMenu.style.visibility="hidden";
+
+function mouseOverEvent() {
+    let visibleSubmenu = subMenu.style.visibility="visible";
+    return visibleSubmenu;
+}
+
+function mouseOutEvent() {
+    let hiddenSubmenu = subMenu.style.visibility="hidden";
+    return hiddenSubmenu;
+}
+
+dropdownMenu.addEventListener('mouseover', mouseOverEvent);
+dropdownMenu.addEventListener('mouseout', mouseOutEvent);
+
+
 // -------------Slider--------------
 
 let slides = document.querySelectorAll(".slide");
@@ -57,36 +77,23 @@ buttonRight.addEventListener("click", function() {
 startSlide();
 
 
-/* // -------------Articles----------------
+// -------------Articles----------------
 
-let chairOneArticle = document.getElementById("#chair1");
-let chairTwoArticle = document.getElementById("#chair2");
+let chairOneArticle = document.getElementById("chair1");
+let chairTwoArticle = document.getElementById("chair2");
 let chairArray = [chairOneArticle, chairTwoArticle];
 let articlesHeader = document.querySelectorAll(".articles_header");
 
-//mouseOver event
+//mouse over and out events
 
-function mouseOver() {
+function mouseChair() {
     for (let i=0; i<chairArray.length; i++) {
         chairArray[i].addEventListener("mouseover", function() {
-            articlesHeader.style.display="none";
+            articlesHeader[i].style.display="none";
+        });
+        chairArray[i].addEventListener("mouseout", function() {
+            articlesHeader[i].style.display="flex";
         });
     }
 }
-mouseOver(); */
-
-let chairOneArticle = document.getElementById("#chair1");
-let chairTwoArticle = document.getElementById("#chair2");
-let chairArray = [chairOneArticle, chairTwoArticle];
-let articlesHeader = document.querySelectorAll(".articles_header")[0];
-
-//mouseOver event
-
-function mouseOver() {
-    for (let i=0; i<chairArray.length; i++) {
-        chairArray[i].addEventListener("mouseover", function() {
-            articlesHeader.style.display="none";
-        });
-    }
-}
-mouseOver();
+mouseChair();
