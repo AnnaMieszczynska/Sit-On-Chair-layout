@@ -164,33 +164,39 @@ li.mainMenu_item {
 }
 
 .button_left, .button_right {
-    width: 200px;
+    width: 10%;
     height: 100%;
     font-size: 75px;
     padding-top: 213px;
     padding-bottom: 212px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
 }
 
 .button_left {
-    padding-left: 72px;
+    padding-left: 60px;
 }
 
 .button_right {
-    padding-right: 40px;
+    padding-right: 60px;
 }
 
-.slideContainer {
+.slidesContainer {
+    width: 80%;
     height: 100%;
 }
 
 .slide {
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.slide_left {
+#defaultSlide .slide_left {
     width: 40%;
     height: 400px;
     background-image: url("../images/black_chair.png");
@@ -207,6 +213,16 @@ li.mainMenu_item {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#nextSlide .slide_left {
+    width: 40%;
+    height: 400px;
+    background-image: url("../images/orange_chair.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* optimization of background features didn't work with that particular element (why?), so I had to split it in separate declarations */
 }
 
 h1 {
